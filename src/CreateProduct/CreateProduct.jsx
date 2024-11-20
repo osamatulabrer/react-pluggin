@@ -1,8 +1,10 @@
 import { Select, Label, TextInput, Textarea } from "flowbite-react";
 import { api } from "../api/api";
 import useHook from "../hook/useHook";
+import { useEffect, useState } from "react";
 
 export default function CreateProduct() {
+    const [categories,setCategories] = useState([])
   const {attr:title,onClear:titleClear} = useHook("");
   const {attr:category,onClear:categoryClear} = useHook("");
   const {attr:description,onClear:desClear} = useHook("");
@@ -29,7 +31,21 @@ const handleSubmit = ()=>{
     priceClear();
     ratingClear()
 }
+useEffect(()=>{
 
+    try{
+      async function getData() {
+        const conn = await api.get("/categories")
+      
+        setCategories(conn.data)
+      }
+      getData();
+    }catch(error){
+      console.log(error);
+      
+    }
+    
+    },[])
   return (
     <>
       <div className="col-span-9 bg-white p-3">
@@ -51,10 +67,8 @@ const handleSubmit = ()=>{
               <Label htmlFor="category" value="Select your category" />
             </div>
             <Select id="category" {...category} required>
-              <option>United States</option>
-              <option>Canada</option>
-              <option>France</option>
-              <option>Germany</option>
+                {categories.map(item => (<option  key={item.id }>{item.title}</option>))}
+        
             </Select>
           </div>
           <div className="mb-4">
