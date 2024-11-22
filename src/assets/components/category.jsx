@@ -1,6 +1,8 @@
 
 
 function SideBer({categories}){
+   
+    
     return(
         <div className="col-span-3 bg-white font-semibold">
             <h2 className="text-3xl font-semibold mb-5 px-2">product category</h2>

@@ -269,43 +269,8 @@
       "price": 325,
       "ratting": 4.7,
       "category": "dining table"
-    },
-    {
-      "id": "d8069b94-f332-48f5-ab8f-e41f59e71444",
-      "title": "Nisi natus facere it",
-      "image": "Eligendi cum est il",
-      "description": "Qui illo aut dolorum",
-      "price": "985",
-      "ratting": "Et nostrud cupiditat",
-      "category": "Canada"
-    },
-    {
-      "id": "6f911c60-14d3-4529-a48d-8d25fb242f06",
-      "title": "",
-      "image": "",
-      "description": "",
-      "price": "",
-      "ratting": "",
-      "category": ""
-    },
-    {
-      "id": "e16cfd06-aafa-4016-a4e4-42cc53e8bf69",
-      "title": "Qui tempora in dolor",
-      "image": "Ullamco animi rerum",
-      "description": "Vel in duis et numqu",
-      "price": "464",
-      "ratting": "Enim dolores quibusd",
-      "category": "United States"
-    },
-    {
-      "id": "c4247eec-0b22-4cfb-b6f3-7b2c202b191b",
-      "title": "Quia fugit quos neq",
-      "image": "Quaerat molestiae ne",
-      "description": "Voluptas voluptatem ",
-      "price": "930",
-      "ratting": "Nisi quia in qui par",
-      "category": "Canada"
     }
+   
   ],
   "categories": [
     {
